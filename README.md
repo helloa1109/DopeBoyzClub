@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=DopeBoyzClub&fontSize=90" />
+
 # DopeBoyzClub
 Hot FrontEnd Crew
 

@@ -25,6 +25,7 @@ Hot FrontEnd Crew
   <img src="https://img.shields.io/badge/mysql 8-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
   <img src="https://img.shields.io/badge/spring_boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
   <img src="https://img.shields.io/badge/Gradle-c71a36?style=for-the-badge&logo=Gradle&logoColor=white"> 
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
 </div>
 
 ### Tools

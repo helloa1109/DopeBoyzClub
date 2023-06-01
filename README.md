@@ -35,6 +35,5 @@ Hot FrontEnd Crew
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </div>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=helloa1109&langs_count=5)]([https://github.com/레포지토리주소](https://github.com/helloa1109/DopeBoyzClub.git))
 
 

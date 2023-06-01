@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=shark&color=red&height=200&section=header&text=DopeBoyzClub&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=shark&color=auto&height=200&section=header&text=DopeBoyzClub&fontSize=90" />
 
 # DopeBoyzClub
 Hot FrontEnd Crew

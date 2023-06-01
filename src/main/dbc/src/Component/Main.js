@@ -96,27 +96,27 @@ function Main(props) {
             <div className="fullpage-slider__slide bg-1" style={{ height: windowHeight }}>
                 <div className="centered-parent">
                     <div className="centered-child font-style-1"></div>
-                    <div className="centered-child font-style-2">메인</div>
+                    <div className="centered-child font-style-2">페이커수정본</div>
                 </div>
             </div>
 
             <div className="fullpage-slider__slide bg-2" style={{ height: windowHeight }}>
                 <div className="centered-parent">
-                    <div className="centered-child font-style-1">2</div>
-                    <div className="centered-child font-style-2">찬민</div>
+                    <div className="centered-child font-style-1">2ㅇ</div>
+                    <div className="centered-child font-style-2">찬민ㅇㅇㅇㅇ</div>
                 </div>
             </div>
 
             <div className="fullpage-slider__slide bg-3" style={{ height: windowHeight }}>
                 <div className="centered-parent">
-                    <div className="centered-child font-style-1">2</div>
-                    <div className="centered-child font-style-2">동휘</div>
+                    <div className="centered-child font-style-1">2ㅇ</div>
+                    <div className="centered-child font-style-2">동휘ㅇㅇㅇㅇ</div>
                 </div>
             </div>
 
             <div className="fullpage-slider__slide bg-4" style={{ height: windowHeight }}>
                 <div className="centered-parent">
-                    <div className="centered-child font-style-1">성준<br /></div>
+                    <div className="centered-child font-style-1">성준ㄸㄷ<br /></div>
                 </div>
             </div>
         </Slider>

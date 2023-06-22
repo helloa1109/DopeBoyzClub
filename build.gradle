@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.7.13'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "com.github.node-gradle.node" version '4.0.0'
 }
 
 group = 'com.example'
@@ -35,4 +36,53 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+// React build 설정
+def reactAppDir = "$projectDir/src/main/dbc"
+/*
+sourceSets {
+  main {
+    resources {
+      srcDirs = ["$webappDir/build", "$projectDir/src/main/resources"]
+    }
+  }
+}
+*/
+
+processResources {
+    dependsOn "copyReactFile"
+    //dependsOn "appNpmInstall"
+}
+
+
+task copyReactFile(type: Copy) {
+    dependsOn "buildReact"
+    from "$reactAppDir/build"
+    //into "$buildDir/resources/main/static"
+    into "$projectDir/src/main/resources/static/"
+}
+
+task buildReact(type: Exec) {
+    dependsOn "installReact"
+    workingDir "$reactAppDir"
+    inputs.dir "$reactAppDir"
+    group = BasePlugin.BUILD_GROUP
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "run-script", "build"
+    } else {
+        commandLine "npm", "run-script", "build"
+    }
+}
+
+task installReact(type: Exec) {
+    workingDir "$reactAppDir"
+    inputs.dir "$reactAppDir"
+    group = BasePlugin.BUILD_GROUP
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "audit", "fix"
+        commandLine "npm.cmd", "install"
+    } else {
+        commandLine "npm", "audit", "fix"
+        commandLine "npm", "install"
+    }
+}
 

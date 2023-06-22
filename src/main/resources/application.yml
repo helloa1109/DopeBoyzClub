@@ -1,2 +1,20 @@
 server:
   port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://db-h1s5o-kr.vpc-pub-cdb.ntruss.com/dbc-db?serverTimezone=Asia/Seoul
+
+    username: dope
+    password: pray4jj!
+  servlet:
+    multipart:
+      max-file-size: 10000MB
+      max-request-size: 10000MB
+
+mybatis:
+  type-aliases-package: com.example.dopeboyzclub.dto
+  mapper-locations:
+    - /mapper/**/*.xml

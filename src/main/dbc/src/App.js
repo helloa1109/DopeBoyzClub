@@ -1,8 +1,9 @@
+import Main from "./Component/Main";
 
 function App() {
   return (
     <div className="App">
-      <h1>dd</h1>
+      <Main/>
     </div>
   );
 }

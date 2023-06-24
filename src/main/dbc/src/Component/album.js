@@ -6,8 +6,6 @@ function Album(props) {
     const [aphoto,setAPhoto]=useState('');
     const [a_name,setAName]=useState('');
 
-    // const photo1 =process.env.REACT_APP_IMGURL;
-
 
     const fileUploadEvent = (e) => {
         //파일 갯수가 3개가 넘을경우 이벤트 종료
@@ -41,7 +39,7 @@ function Album(props) {
         e.preventDefault();
         if(aphoto.length===0)
         {
-            alert("사진 먼저 업로드해라~");
+            alert("사진 업로드 안하냐잉?");
             return;
         }
 
@@ -53,9 +51,6 @@ function Album(props) {
     }
     return (
         <div>
-            <div>
-                {/*<img alt={''} src={`${photo1}8481acf0-ab9e-4629-a72b-b4badc68926b`}/>*/}
-            </div>
             <input type='file' id={'file'} multiple
                    onChange={fileUploadEvent}/>
             <form onSubmit={onSubmitEvent}>

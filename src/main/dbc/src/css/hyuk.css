@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'ChosunBg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+    height: 1000vw;
+}
+
+#helper {
+    position: absolute;
+    top: 50vw;
+    left: 0;
+}
+
+#container {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    white-space: nowrap;
+    font-size: 0;
+}
+#container > * {
+    font-size: 1rem;
+}
+
+#intro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.module {
+    height: 100vh;
+    width: 100vw;
+    display: inline-flex;
+}
+
+.first {
+    /*background-color: pink;*/
+}
+
+/*
+    텍스트 컨테이너 영역
+ */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.25rem;
+    line-height: 1;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 200px;
+}
+
+.gradientText {
+    position: relative;
+    background-image: linear-gradient(to right, #000, #000);
+    z-index: 1;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradientText::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    -webkit-background-clip: text;
+}
+
+.transitionOn::before {
+    opacity: 1;
+}
+
+.gradientText.gradient_HTML::before {
+    content: "DOPE";
+    background-image: linear-gradient(to right, #007CF0, #00DFD8);
+}
+
+.gradientText.gradient_CSS::before {
+    content: "BOYZ";
+    background-image: linear-gradient(to right, #7928ca, #ff0080);
+}
+
+.gradientText.gradient_Javascript::before {
+    content: "CLUB";
+    background-image: linear-gradient(to right, #ff4d4d, #f9cb28);
+    color: #007CF0;
+}
+
+/*
+    세컨드 왼쪽 영역
+ */
+.second {
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+}
+
+.second .second_main{
+    border: 1px solid seagreen;
+    width: 50%;
+}
+
+.second .text_container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid red;
+    width: 100%;
+    height: 30%;
+    top: 20%;
+    position: relative;
+}
+
+.second .text_container span{
+    color: white;
+    font-family: ChosunBg;
+    font-size: 70px;
+    padding-left: 15%;
+}
+
+/*
+    git 레포지터리 링크 css
+ */
+.git_link{
+    padding-top: 40px;
+    border: 1px solid yellow;
+    padding-left: 15%;
+}
+
+.git_box {
+    margin-top: 30px;
+    border: none;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: ChosunBg;
+}
+
+.git_link a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+    메인텍스트 아래 border css
+ */
+.border_div{
+    padding-top: 10%;
+    border-bottom: 7px solid white;
+    width: 700px;
+    margin-left: 15%;
+}
+
+/*
+    세컨드 오른쪽 영역
+ */
+
+.profile_container{
+    float: right;
+    border: 1px solid green;
+    width: 50%;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}

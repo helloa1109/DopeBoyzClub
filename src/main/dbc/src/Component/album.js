@@ -6,7 +6,7 @@ function Album(props) {
     const [aphoto,setAPhoto]=useState('');
     const [a_name,setAName]=useState('');
 
-    const photo1 =process.env.REACT_APP_IMGURL;
+    // const photo1 =process.env.REACT_APP_IMGURL;
 
 
     const fileUploadEvent = (e) => {

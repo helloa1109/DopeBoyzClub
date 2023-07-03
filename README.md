@@ -37,7 +37,7 @@ Hot FrontEnd Crew
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
-   <img src="https://img.shields.io/badge/figma-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+   <img src="https://img.shields.io/badge/figma-00599C?style=for-the-badge&logo=figma&c%2B%2B&logoColor=white">
 </div>
 
 
